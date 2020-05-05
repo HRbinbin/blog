@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hrbinbin.github.io/2020/05/05/article-title/</loc>
+    <loc>https://hrbinbin.github.io/blog/2020/05/05/article-title/</loc>
     <lastmod>2020-05-05</lastmod>
   </url>  <url>
-    <loc>https://hrbinbin.github.io/2020/05/05/test-my-mysite/</loc>
+    <loc>https://hrbinbin.github.io/blog/2020/05/05/test-my-mysite/</loc>
     <lastmod>2020-05-05</lastmod>
   </url>  <url>
-    <loc>https://hrbinbin.github.io/2020/05/05/hello-world/</loc>
+    <loc>https://hrbinbin.github.io/blog/2020/05/05/hello-world/</loc>
     <lastmod>2020-05-05</lastmod>
   </url>
 </urlset>
