@@ -711,6 +711,7 @@ abbr[data-original-title] {
 }
 
 blockquote {
+  display: none;
   padding: 10.5px 16px;
   margin: 0 0 21px;
   border: 1px dotted #eeeeee;

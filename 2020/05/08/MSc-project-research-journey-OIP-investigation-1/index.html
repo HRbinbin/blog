@@ -18,16 +18,16 @@
   
   
   <title>MSc project research journey - OIP investigation 1 | Welcome to Ray&#39;s blog</title>
-  <meta name="description" content="OIP investigation 1">
+  <meta name="description" content="OIP investigation 1We tried to explore the OIP value curve from Phi, NTG and Water Saturation. We found a proper division method that treating the OIP plotted by 24 Phi genes as a fragment, and these">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MSc project research journey - OIP investigation 1">
 <meta property="og:url" content="https://ruibinwong.com/2020/05/08/MSc-project-research-journey-OIP-investigation-1/index.html">
 <meta property="og:site_name" content="Welcome to Ray&#39;s blog">
-<meta property="og:description" content="OIP investigation 1">
+<meta property="og:description" content="OIP investigation 1We tried to explore the OIP value curve from Phi, NTG and Water Saturation. We found a proper division method that treating the OIP plotted by 24 Phi genes as a fragment, and these">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://ruibinwong.com/2020/05/08/MSc-project-research-journey-OIP-investigation-1/oip_investigation.png">
 <meta property="article:published_time" content="2020-05-08T18:41:16.000Z">
-<meta property="article:modified_time" content="2020-05-08T18:47:16.525Z">
+<meta property="article:modified_time" content="2020-05-12T22:08:13.375Z">
 <meta property="article:author" content="Ray Huang">
 <meta property="article:tag" content="data investigation">
 <meta name="twitter:card" content="summary">
@@ -46,6 +46,8 @@
   
   
   
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
   
 <meta name="generator" content="Hexo 4.2.0"></head>
 
@@ -316,7 +318,10 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="OIP-investigation-1"><a href="#OIP-investigation-1" class="headerlink" title="OIP investigation 1"></a>OIP investigation 1</h1><p><img src="/2020/05/08/MSc-project-research-journey-OIP-investigation-1/oip_investigation.png" alt="OIP fragment"></p>
+        <h1 id="OIP-investigation-1"><a href="#OIP-investigation-1" class="headerlink" title="OIP investigation 1"></a>OIP investigation 1</h1><p>We tried to explore the OIP value curve from Phi, NTG and Water Saturation. We found a proper division method that treating the OIP plotted by 24 Phi genes as a fragment, and these fragments could show a similar level of OIP (as the figure showing below).</p>
+<p><img src="/2020/05/08/MSc-project-research-journey-OIP-investigation-1/oip_investigation.png" alt="OIP fragment"></p>
+<p>NTG and Water Saturation decide the positions of fragments on the figure. These positions reflect the different level of OIP, which is what we are expecting. We should do further exploration of NTG and Water Saturation to see how they influence the fragments’ positions. </p>
+<p>Now we can be sure these genes are really affecting the OIP.</p>
 
       
     </div>
@@ -359,7 +364,7 @@
     
   <section id="comments">
   	
-      <div id="vcomments"></div>
+           
     
   </section>
 
@@ -498,29 +503,23 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
     
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
   <script type="text/javascript">
-  var GUEST = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail,link';
-  meta = meta.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#vcomments',
-    verify: false,
-    notify: false,
-    appId: '',
-    appKey: '',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: meta,
-    pageSize: '10' || 10,
-    visitor: false
-  });
+  var gitalk = new Gitalk({
+    clientID: '8925bf59857f7f9cc422',
+    clientSecret: 'ed1d6f92341073391a4eda1eb44069ae24b38d16',
+    repo: 'blog',
+    owner: 'HRbinbin',
+    admin: ['HRbinbin'],
+    id: md5(location.pathname),
+    distractionFreeMode: true
+  })
+  gitalk.render('comments')
   </script>
 
-     
+      
 
 
 
