@@ -1,6 +1,6 @@
 # Ray's blog
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-archived-red.svg)](https://www.tidyverse.org/lifecycle/#archived)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License: MIT](https://img.shields.io/github/license/r-lib/ghactions.svg?style=flat)](https://opensource.org/licenses/MIT)
 
 This is Ray's blog built in Hexo + Github pages. It is published on [ruibinwong.com](https://ruibinwong.com/).
