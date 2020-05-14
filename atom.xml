@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ruibinwong.com/"/>
-  <updated>2020-05-13T00:56:00.668Z</updated>
+  <updated>2020-05-14T20:34:41.295Z</updated>
   <id>https://ruibinwong.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MSc project research journey - OIP investigation 3</title>
+    <link href="https://ruibinwong.com/2020/05/14/MSc-project-research-journey-OIP-investigation-3/"/>
+    <id>https://ruibinwong.com/2020/05/14/MSc-project-research-journey-OIP-investigation-3/</id>
+    <published>2020-05-14T18:21:55.000Z</published>
+    <updated>2020-05-14T20:34:41.295Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="OIP-investigation-3"><a href="#OIP-investigation-3" class="headerlink" title="OIP investigation 3"></a>OIP investigation 3</h1><p>The conclusion of <a href="https://ruibinwong.com/2020/05/13/MSc-project-research-journey-OIP-investigation-2/">OIP investigation 2</a> can be more directly to observe when we reorder the model number. The model sequence in the data file is ordered like</p><table><thead><tr><th>NTG</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>0</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th><th>…</th></tr></thead><tbody><tr><td>Phi</td><td>0</td><td>0</td><td>0</td><td>…</td><td>0</td><td>1</td><td>1</td><td>1</td><td>…</td><td>1</td><td>…</td><td>24</td><td>0</td><td>0</td><td>0</td><td>…</td><td>0</td><td>1</td><td>1</td><td>1</td><td>…</td><td>1</td><td>…</td><td>24</td><td>…</td></tr><tr><td>Sw</td><td>0</td><td>1</td><td>2</td><td>…</td><td>24</td><td>0</td><td>1</td><td>2</td><td>…</td><td>24</td><td>…</td><td>24</td><td>0</td><td>1</td><td>2</td><td>…</td><td>24</td><td>0</td><td>1</td><td>2</td><td>…</td><td>24</td><td>…</td><td>24</td><td>…</td></tr></tbody></table><p>and then we have the figure like</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;OIP-investigation-3&quot;&gt;&lt;a href=&quot;#OIP-investigation-3&quot; class=&quot;headerlink&quot; title=&quot;OIP investigation 3&quot;&gt;&lt;/a&gt;OIP investigation 3&lt;/h1&gt;&lt;p&gt;Th
+      
+    
+    </summary>
+    
+    
+    
+      <category term="MSc project" scheme="https://ruibinwong.com/tags/MSc-project/"/>
+    
+  </entry>
   
   <entry>
     <title>MSc project research journey - OIP investigation 2</title>
