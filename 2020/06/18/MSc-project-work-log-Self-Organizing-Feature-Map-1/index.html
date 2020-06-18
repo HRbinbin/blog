@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://ruibinwong.com/2020/06/18/MSc-project-work-log-Self-Organizing-Feature-Map-1/Average_distance_of_Neurons_heatmap.png">
 <meta property="og:image" content="https://ruibinwong.com/2020/06/18/MSc-project-work-log-Self-Organizing-Feature-Map-1/Neuron_OIP_level_&_distance_in_every_direction_heatmap.png">
 <meta property="article:published_time" content="2020-06-18T11:47:17.000Z">
-<meta property="article:modified_time" content="2020-06-18T14:48:31.809Z">
+<meta property="article:modified_time" content="2020-06-18T14:52:15.649Z">
 <meta property="article:author" content="Ray Huang">
 <meta property="article:tag" content="MSc project">
 <meta name="twitter:card" content="summary">
@@ -392,7 +392,8 @@
 </li>
 <li><p><strong>features_grid</strong>: is the structure of the expected map. Here we define a (8, 8) matrix representing a rectangle map</p>
 </li>
-<li><p><strong>learning_radius</strong>: define how many neighbouring neurons would be updated when update a certain neuron is updating. Here is a diagram explain the learning radius affecting the map. The further description can be found in this [notebook](<a href="https://github.com/itdxer/neupy/blob/master/notebooks/sofm/Visualizations" target="_blank" rel="noopener">https://github.com/itdxer/neupy/blob/master/notebooks/sofm/Visualizations</a> from article - “Self-Organizing Maps and Applications”.ipynb).![](./MSc-project-work-log-Self-Organizing-Feature-Map-1/learning radius example.png) </p>
+<li><p><strong>learning_radius</strong>: define how many neighbouring neurons would be updated when update a certain neuron is updating. Here is a diagram explain the learning radius affecting the map. The further description can be found in this [notebook](<a href="https://github.com/itdxer/neupy/blob/master/notebooks/sofm/Visualizations" target="_blank" rel="noopener">https://github.com/itdxer/neupy/blob/master/notebooks/sofm/Visualizations</a> from article - “Self-Organizing Maps and Applications”.ipynb).</p>
+<p>![](./MSc-project-work-log-Self-Organizing-Feature-Map-1/learning radius example.png) </p>
 </li>
 <li><p><strong>std</strong>: configure the learning rate of the neighbouring neurons. Learning rate scales based on the factors produced by the <em>normal distribution</em> with center in the place of a winning neuron and standard deviation specified as a parameter.</p>
 </li>
