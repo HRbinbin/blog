@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ruibinwong.com/"/>
-  <updated>2020-06-22T15:36:09.008Z</updated>
+  <updated>2020-06-22T15:45:52.379Z</updated>
   <id>https://ruibinwong.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ruibinwong.com/2020/06/22/MSc-project-work-log-Self-Organizing-Feature-Map-2/"/>
     <id>https://ruibinwong.com/2020/06/22/MSc-project-work-log-Self-Organizing-Feature-Map-2/</id>
     <published>2020-06-22T14:29:09.000Z</published>
-    <updated>2020-06-22T15:36:09.008Z</updated>
+    <updated>2020-06-22T15:45:52.379Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Self-Organizing-Feature-Map-2"><a href="#Self-Organizing-Feature-Map-2" class="headerlink" title="Self Organizing Feature Map 2"></a>Self Organizing Feature Map 2</h1><p>We do not have the true OIP value of the neurons, therefore, we treated the closest models as the neurons and regard the models’ OIP value as the neurons’. We need a metric to evaluate the similarity of the models and neurons.</p><p>Here we use the Euclidian distance as the metric.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">distance</span><span class="params">(X1, X2)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    Euclidian distance. The input array should have the same dimension</span></span><br><span class="line"><span class="string">    :X1: The first numpy array</span></span><br><span class="line"><span class="string">    :X2: The second numpy array</span></span><br><span class="line"><span class="string">    :return: a scalar</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="keyword">return</span> np.sum((X1-X2)**<span class="number">2</span>)</span><br></pre></td></tr></table></figure><p>The left figure is the OIP level heatmap. The right one is the Euclidian distance between neurons and their closest models.</p><p><img src="/2020/06/22/MSc-project-work-log-Self-Organizing-Feature-Map-2/OIP_level_of_each_neuron_n_distance.png" alt></p>]]></content>
     
@@ -36,7 +36,7 @@
     
     
     
-      <category term="Self Organizing Feature Map 2" scheme="https://ruibinwong.com/tags/Self-Organizing-Feature-Map-2/"/>
+      <category term="MSc project" scheme="https://ruibinwong.com/tags/MSc-project/"/>
     
   </entry>
   
