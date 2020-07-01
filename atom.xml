@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ruibinwong.com/"/>
-  <updated>2020-06-22T15:45:52.379Z</updated>
+  <updated>2020-07-01T17:58:45.864Z</updated>
   <id>https://ruibinwong.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MSc project work log - Self Organizing Feature Map 3</title>
+    <link href="https://ruibinwong.com/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/"/>
+    <id>https://ruibinwong.com/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/</id>
+    <published>2020-07-01T16:34:18.000Z</published>
+    <updated>2020-07-01T17:58:45.864Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Self-Organizing-Feature-Map-3"><a href="#Self-Organizing-Feature-Map-3" class="headerlink" title="Self Organizing Feature Map 3"></a>Self Organizing Feature Map 3</h1><p>This blog demonstrates the comparison of a serial experiment. It will just display the plots. Here we did the experiment to see if the clustering would change greatly when we shuffle the data before feed them into SOFM.</p><p>In these experiment, we use the fix hyperparameter of the SOFM and only change the sequence of the input data. The code we use is display below.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">sofm = algorithms.SOFM(</span><br><span class="line">    n_inputs=<span class="number">135</span>,</span><br><span class="line">    step=<span class="number">0.4</span>,</span><br><span class="line">    features_grid=(<span class="number">8</span>, <span class="number">8</span>),</span><br><span class="line">    learning_radius=<span class="number">8</span>,</span><br><span class="line">    std=<span class="number">1</span>,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">model_1 = sofm.train(genomes, epochs=<span class="number">6000</span>)</span><br><span class="line">model_2 = sofm.train(shuffle(genomes), epochs=<span class="number">6000</span>)</span><br></pre></td></tr></table></figure><h2 id="OIP-level-of-each-neuron"><a href="#OIP-level-of-each-neuron" class="headerlink" title="OIP level of each neuron"></a>OIP level of each neuron</h2><p>The first pair is the OIP level of each neuron. These plots are training with the default sequence which is sorted by the genetic sequence as it in the <code>OilInPlaceEvolution.csv</code> file. The strategy of estimating neuron’s OIP is using the closest geological model and let the model’s OIP be the neuron’s. (matching strategy).</p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/OIP_level_of_each_neuron_n_distance.png" alt></p><p>The second pair is trained by shuffle sequence. The strategy is matching strategy too.</p><p>The strategy of estimating neuron’s OIP is using the <strong>Gradient Boosting regressor</strong> to predict it.</p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/OIP_level_of_each_neuron_n_distance_shuffle.png" alt></p><p>We can see the sequence of training data could effect the neurons, including the value and distance.</p><p>The heatmap of neuron’s OIP predicted by <strong>Gradient Boosting regressor</strong> (predicted strategy) shows the similar circumstance. The first pair is trained by order sequence and the second one is by shuffle data.</p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/OIP_level_of_each_neuron_n_predict_OIP.png" alt></p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/OIP_level_of_each_neuron_n_predict_OIP_shuffle.jpg" alt></p><h2 id="Clustering-performance"><a href="#Clustering-performance" class="headerlink" title="Clustering performance"></a>Clustering performance</h2><p>These plot pairs are showing the performance of SOFM clustering. The first 2 plots are the output of the model trained by order sequence. The 2 plots demonstrate the performance that we could say not bad. But there are still some data points are significant clustered in wrong groups.</p><h4 id="Sequence-input"><a href="#Sequence-input" class="headerlink" title="Sequence input"></a>Sequence input</h4><p>The first plot shows that there are some relatively dark blue color dots (representing the high level of OIP model) on the low level OIP positions on the bottom of the plot.</p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/Clustering_Genomes_with_SOFM.png" alt></p><p>The neurons using Gradient Boosting regressor to estimating the OIP can also do wrong clustering. We can see there are fade blue dots (representing the low level of the OIP model) on the top of the plot between approximate 6800-10000 model ID.</p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/Clustering_Genomes_with_SOFM_GBreg.png" alt></p><h4 id="Shuffle-input"><a href="#Shuffle-input" class="headerlink" title="Shuffle input"></a>Shuffle input</h4><p>The shuffle data trains better model as the plots below showing. Comparing with the first plot of the sequence input, this one below shows better performance since the weights (marked as red crosses on the plot) are more discrete, leading to more distance between the clusters. The dots’ color are basically corresponding with the true OIP level. </p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/Clustering_Genomes_with_SOFM_shuffle.png" alt></p><p>The dots clustered by the neurons’ OIP from gradient boosting regressor are much better. Comparing with the neuron’s OIP getting from matching strategy, these dots with a similar colour are showing horizontal distribution, which is what we expect.</p><p><img src="/2020/07/02/MSc-project-work-log-Self-Organizing-Feature-Map-3/Clustering_Genomes_with_SOFM_GBreg_shuffle.png" alt></p><h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>From the simple analysis, we can know shuffling the data can improve the performance of the SOFM model.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Self-Organizing-Feature-Map-3&quot;&gt;&lt;a href=&quot;#Self-Organizing-Feature-Map-3&quot; class=&quot;headerlink&quot; title=&quot;Self Organizing Feature Map 3&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+    
+      <category term="MSc project" scheme="https://ruibinwong.com/tags/MSc-project/"/>
+    
+  </entry>
   
   <entry>
     <title>MSc project work log - Self Organizing Feature Map 2</title>
