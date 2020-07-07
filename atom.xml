@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ruibinwong.com/"/>
-  <updated>2020-07-07T16:41:40.773Z</updated>
+  <updated>2020-07-07T16:42:10.317Z</updated>
   <id>https://ruibinwong.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://ruibinwong.com/2020/07/07/MSc-project-work-log-Cluster-histogram-01/"/>
     <id>https://ruibinwong.com/2020/07/07/MSc-project-work-log-Cluster-histogram-01/</id>
     <published>2020-07-07T15:22:36.000Z</published>
-    <updated>2020-07-07T16:41:40.773Z</updated>
+    <updated>2020-07-07T16:42:10.317Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Cluster-histogram-1"><a href="#Cluster-histogram-1" class="headerlink" title="Cluster histogram 1"></a>Cluster histogram 1</h1><p>The histogram of DBSCAN result:</p><p><img src="/2020/07/07/MSc-project-work-log-Cluster-histogram-01/E:%5Cblog%5Csource_posts%5CMSc-project-work-log-Cluster-histogram-01%5CDBSCAN_histogram.jpg" alt></p><p>The histogram of SOFM result:</p><p><img src="/2020/07/07/MSc-project-work-log-Cluster-histogram-01/E:%5Cblog%5Csource_posts%5CMSc-project-work-log-Cluster-histogram-01%5CSOFM_histograms.jpg" alt></p>]]></content>
     
